@@ -1,0 +1,82 @@
+@charset "utf-8";
+/*  ## RESET BROWSER DEFAULT CSS  ---------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {	border: 0;
+	font-size: 100%;
+	line-height: 1.4;
+	margin: 0;
+	outline: 0;
+	padding: 0;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+:focus {outline: 0;}
+::-moz-selection{ background:#DEDC00; color:#5D5D5C;}
+::selection{ background:#DEDC00; color:#5D5D5C;}
+a {color:#767675;}
+a:hover {color:#969695;}
+body {
+	margin:0;
+	padding:20px;
+	background:#f5f4f2;
+	font:normal normal 12px/1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#a09f9e;}
+p strong	{font-weight:normal; color:#696867;}
+
+/*  ## TYPOGRAPHY  ------------------------------------------------------------------*/
+h1 		{font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-weight:normal; color:#5d5d5c; font-size:56px; line-height:56px; margin:0 0 30px; padding:0; text-shadow: 1px 1px #fff;}
+h2,
+h3			{font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-weight:normal; color:#a09f9e; font-size:18px; line-height:24px; margin:0 0 40px; padding:0; text-shadow: 1px 1px #FFFFFF; text-align:justify}
+h2			{font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;font-size:23px; line-height:32px; color:#515151;margin:0 0 15px; padding:0;}
+h4,	h4 a	{font:normal normal 15px/1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif; color:#525251;margin:0 0 15px; padding:0; text-transform:uppercase; text-shadow: 1px 1px #FFFFFF; text-decoration:none;}
+p {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:23px;
+	text-align:justify;
+	margin:0 0 30px;}
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;}
+p.Email,
+p.Tel,
+p.Email,
+p.Adresse,
+p.GoogleMaps 	{line-height:16px; margin-bottom:6px; padding-left:26px; position:relative;}
+p.Email 		a,
+p.Tel 			span,
+p.Email 		span,
+p.Adresse 	span	 {line-height:16px;display:-moz-inline-box; display:-webkit-inline-box; display:inline-block; padding:1px 5px;height:16px;background:#DEDC00;text-decoration:none; color:#828280;}p.Email		s,
+p.Tel			s,
+p.Email		s,
+p.Adresse 	s,
+p.GoogleMaps s{display:block;width:26px; height:16px; position:absolute; top:0; left:0; background:url(../images/footer_contact_icons.gif) no-repeat 50%;}
+p.Tel s							{background-position:left top;}
+p.Email 	s					{background-position:right top;}
+p.Adresse s					{background-position:left bottom;}
+p.GoogleMaps s			{background-position:right bottom; height:20px;}
+p.GoogleMaps a 		{color:#525251; font-weight:normal; text-decoration:none;}
+p.GoogleMaps a:hover {color:#666; text-decoration:underline;}
+div.Transports												{margin-top:20px; float:left; clear:both; width:120%;}
+div.Transports p.Parking,
+div.Transports p.Metro,
+div.Transports p.Tramway 							{ margin-bottom:6px; padding-left:26px; position:relative; font-size:0.9em;  text-align:left; white-space:nowrap; }
+div.Transports p,
+div.Transports p a										{color:#A09F9E; display:block;line-height:22px; text-decoration:underline;}
+div.Transports p a:hover								{ color:#C0AFAE}
+div.Transports p.Parking 		s,
+div.Transports p.Metro			s,
+div.Transports p.Tramway 	s						{display:block;width:22px; height:22px; position:absolute; top:0; left:0; background: url(../images/picto_transports.gif) no-repeat 50%;}
+div.Transports p.Metro 		s						{background-position:0 0;}
+div.Transports p.Tramway 	s						{background-position:0 -100px;}
+div.Transports p.Parking		s						{background-position:0 -200px;}
+
+/* CARTE GOOGLE MAPS */
+#carteGoogleMaps	{
+	width:500px;
+	height:500px;
+	float:left;
+}
+#carteGoogleMaps	div.infoBulleIWS		{margin:0; line-height:1.4em;}
+#carteGoogleMaps	div.infoBulleIWS	h4		{margin:0 0 5px; font-size:1.2em;}
+#blocAdresses				{ width:300px; float:left; margin-left:20px;}

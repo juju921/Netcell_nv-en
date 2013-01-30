@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+<link rel="shortcut icon" href="favicon.ico" />
+
+  <title>Netcell</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+
+
+  <link rel="stylesheet" href="css/default.css"  />
+
+  <!-- Nivo Slider  -->
+<link rel="stylesheet" href="css/nivo-slider.css"  media="screen" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+<script src="javascripts/jquery.nivo.slider.pack.js" ></script>
+
+
+<!-- localscroll -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/jquery.scrollTo.js"></script>
+
+
+
+  <!-- knacss -->
+  <link rel="stylesheet" href="css/knacss.css">
+  
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+<!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="javascripts/googmal.js"></script>-->
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+   <script type="text/javascript">
+    $(document).ready(function() {
+      $('a.login-window').click(function() {
+
+                //Getting the variable's value from a link 
+                var loginBox = $(this).attr('href');
+
+    //Fade in the Popup
+    $(loginBox).fadeIn(300);
+    
+    //Set the center alignment padding + border see css style
+    var popMargTop = ($(loginBox).height() + 24) / 2; 
+    var popMargLeft = ($(loginBox).width() + 24) / 2; 
+    
+    $(loginBox).css({ 
+      'margin-top' : -popMargTop,
+      'margin-left' : -popMargLeft
+    });
+    
+    // Add the mask to body
+    $('body').append('<div id="mask"></div>');
+    $('#mask').fadeIn(300);
+    
+    return false;
+  });
+
+  // When clicking on the button close or the mask layer the popup closed
+  $('a.close, #mask').live('click', function() { 
+    $('#mask , .login-popup').fadeOut(300 , function() {
+      $('#mask').remove();  
+    }); 
+    return false;
+  });
+});
+
+    </script>
+
+</head>
+<body>
+  <div class="head"><!-- header -->
+<header>
+
+
+ <a href="/" title="Netcell">
+<img src="img/logo-netcell.png" alt="Netcell" width="130" height="130" >
+</a>
+<div class="buton">
+<a href="acces-clients.html" title="Connexion">
+<img src="img/Connexion.png" alt="Connexion" width="143" height="45"></a>
+
+</div>
+<nav id="navi"><!-- NAV -->
+ <ul >
+<li><a href="index.html?#Accueil" title="Accueil">home</a></li>
+<li><a href="index.html?#nosmetier" title="Nos Métiers">our buisiness </a></li>
+<li><a href="index.html?#contact" title="Contacts">Contact us</a></li>
+ </ul>
+
+</nav>
+
+</header>
+</div><!-- header -->
+
+
+<div class="presentation" id="Accueil">
+
+
+<section>
+<header class="titre"><img src="img/legal.png" alt="Netcell Qui sommes nous " width="150" height="31"></header>
+
+
+<article>
+
+
+<!-- Then somewhere in the <body> section -->
+<div class="slider-wrapper theme-default"></div>
+<div id="htmlcaption" class="nivo-html-caption">
+    <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+</div><p>Site  published by NETCELL<br>
+Société à Responsabilité  Limitée (S.A.R.L, Limited Liabilities Company) with share capital of €5 000<br>
+Registered in the Créteil Trade and Companies Register under no. <br>
+Registered office: 14 rue Massue, 94300 Vincennes, France<br>
+Intra-community VAT number: FR 52 498 973 510<br>
+Telephone: +33 1 53 66 99 99<br>
+e-mail: <a href="mailto:contact@netcell.fr">contact@netcell.fr</a><br>
+Publishing director: Rémi SEBAG<br>
+<strong>Site hosted by 1&amp;1</strong> <br>
+<br>
+Property of NETCELL<br>
+All content  (photographs, text, videos, sound, animation, graphics, etc.) available on this  website is and remains the exclusive property of NETCELL, its parent companies,  and/or its partners. It is prohibited to reproduce, represent or market this  content without the express authorization of its owner. The website's content  may not be used for any secondary purpose whatsoever, whether in exchange for  payment or free of charge. </p>
+<p>You may not  create any links to this website without the prior written consent of NETCELL. </p>
+<p><br>
+	COOKIES<br>
+	NETCELL  informs the website's users during their visits to this website or visits to  third-party websites that one or more cookies may be installed on their  computer. A cookie is a small file stored on the user's hard drive. This file  does not identify users by name but records information about their navigation  of the site, such as pages viewed, date and time, and IP address. The  information is collected mainly for statistical purposes. NETCELL does not  share this information with third parties unless required to do so by law  enforcement authorities. Users have the right to refuse to store cookies on  their computers through the appropriate configuration of their web browser, as  follows:<br>
+	<br>
+	For <strong>Mozilla firefox:</strong></p>
+<ul type="disc">
+	<li>Select       the &quot;Tools&quot; menu, then &quot;Options&quot;</li>
+	<li>Click on the &quot;Privacy&quot; icon</li>
+	<li>Find       the &quot;Cookie&quot; menu and select the options you want</li>
+</ul>
+<p>For <strong>Microsoft  Internet Explorer:</strong></p>
+<ul type="disc">
+	<li>Select       the &quot;Tools&quot; menu, then &quot;Internet Options&quot;</li>
+	<li>Click on the &quot;Privacy&quot; tab</li>
+	<li>Select       the level desired using the cursor</li>
+</ul>
+<p>For <strong>Opera  6.0</strong> and above :</p>
+<ul type="disc">
+	<li>Select the &quot;File&quot; &gt;       &quot;Preferences&quot; menu</li>
+	<li>Privacy</li>
+</ul>
+<p>Users with  a different web browser will have to consult the menu options for deactivating  cookies. In general, users are directed to the browser's &quot;Help&quot;  function for more information. </p>
+</article>
+
+
+</section>
+
+
+  </div><!-- Présentation -->
+
+
+
+
+  <div class="Nosmetiers" id="nosmetier"></div>
+
+
+
+<div id="contact" class="contact">
+<script src="javascripts/jquery.nivo.slider.js" ></script>
+
+      <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</body>
+</html>
